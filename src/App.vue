@@ -1,19 +1,9 @@
 <template>
-    <div class="container">
-        <h1> Live Life London </h1>
-        <div class ='row'>
-            <div class ='col-md-3'>
+<div class ='container flex'> 
             <app-gallery></app-gallery>
-        </div>
-        <div class ='col-md-9'>
                 <app-gallery-display></app-gallery-display>
-        </div>
-        </div>
-       
-        
-    </div>
+</div>     
 </template>
-
 <script>
     import Gallery from './components/Gallery.vue';
     import GalleryDisplay from './components/GalleryDisplay.vue';
@@ -26,5 +16,21 @@
 </script>
 
 <style>
+    ul {
+        margin: 0;
+        padding:0;
+    }
+    body {
+        padding:0;
+        margin:0;
+    }
+    img{
+        max-width:100%;
+    }
 
+</style>
+<style scoped>
+    .flex {
+        display:flex;
+    }
 </style>

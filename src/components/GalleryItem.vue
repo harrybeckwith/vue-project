@@ -1,8 +1,6 @@
 <template>
-    <li 
+    <li
     @mouseenter ='getItem'
-    :class='{active: isActive}'
-    :click ='isActive =!isActive'
     style='cursor:pointer'
     >
     <h3>{{galleryItem.name}}</h3>
@@ -12,19 +10,17 @@
 <script>
     import {Bus} from '../main';
     export default {
-        data:function() {
-            return {
-                isActive: false
-            }
-        },
-        props:['galleryItem'],
+   
+    props:['galleryItem'],
      methods: {
         getItem() {
             Bus.$emit('getItem', this.galleryItem);
-          
+            
+        }
         }
     }
-    }
+
+
 </script>
 <style scoped>
     li {

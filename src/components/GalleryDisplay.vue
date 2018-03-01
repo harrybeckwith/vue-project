@@ -1,17 +1,24 @@
 <template>
+
 <div class ='galleryDisplay'>
   
+
+
     <div class ='galleryDisplay__text'>
          
-        <h1 class ='galleryDisplay__text__title' v-if='!galleryItem'> Select item</h1>
+        <p v-if='!galleryItem'> asasa</p>
    
         <div v-else> 
             <h1 class ='galleryDisplay__text__title'>  Name: {{galleryItem.name}} </h1>
-            <img :src="'src/assets/img/' + galleryItem.name + '.jpg'">
+          
             <p>{{galleryItem.desc}}</p>
         </div>
     
     </div>
+    <button>Know more</button>
+    <div class ='galleryDisplay__sideMenu'>
+        
+     </div>
 
  </div>
 </template>
@@ -30,6 +37,7 @@
     }
 }
 
+
  </script>
  <style scoped>
 
@@ -43,11 +51,17 @@
          left:50%;
          top:50%;
          transform:translate(-50%,-50%);
-         color:#fff;
+         color:#000;
         
      }
-     .galleryDisplay__text__title {
-   
-       
+         
+     .galleryDisplay__sideMenu {
+            position: absolute;
+            background:blue;
+            right:0;
+            top:0;
+            bottom:0;
+            height:100vh;
+            width:20%;
      }
  </style>

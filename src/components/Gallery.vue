@@ -2,9 +2,8 @@
     <div class ='menu-container'>
         <div class ='menu'>
             <div class='menu-logo'>LOGO</div>
-     
             <ul>
-            <app-gallery-item v-for='galleryItem in gallery' :galleryItem='galleryItem'> </app-gallery-item>
+                    <app-gallery-item v-for='galleryItem in gallery' :galleryItem='galleryItem'> </app-gallery-item>
             </ul>
         </div>
     </div>
@@ -20,7 +19,8 @@
                     {name: 'running', subName: 'subName', imgSrc: 'image3.jpg'},
                     {name: 'riding', subName: 'subName', imgSrc: 'image4.jpg'},
                     {name: 'flying', subName: 'subName', imgSrc: 'image5.jpg'}
-                ]
+                ],
+                activeItemId: ''
             }
         }, components: {
             'app-gallery-item': GalleryItem

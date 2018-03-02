@@ -1,7 +1,7 @@
 <template>
 <div class ='container flex'> 
             <app-gallery></app-gallery>
-                <app-gallery-display></app-gallery-display>
+            <app-gallery-display></app-gallery-display>
 </div>     
 </template>
 <script>
